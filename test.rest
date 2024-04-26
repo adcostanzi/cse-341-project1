@@ -1,0 +1,23 @@
+### LOCAL TEST
+
+### Test locally App Hello World
+GET https://localhost:3000/
+
+### Test locally get all contacts
+GET https://localhost:3000/contacts
+
+### Test locally get contact by id
+GET https://localhost:3000/contacts/662b2df0e5d4f9d90f0c9695
+
+
+
+### PRODUCTION
+
+### Test App Hello World
+GET https://cse-341-project1-kvlw.onrender.com/
+
+### Test get all contacts
+GET https://cse-341-project1-kvlw.onrender.com/contacts
+
+### Test get contact by id
+GET https://cse-341-project1-kvlw.onrender.com/contacts/662b2df0e5d4f9d90f0c9695
