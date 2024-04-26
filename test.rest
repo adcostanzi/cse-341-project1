@@ -1,13 +1,13 @@
 ### LOCAL TEST
 
 ### Test locally App Hello World
-GET https://localhost:3000/
+GET http://localhost:3000/
 
 ### Test locally get all contacts
-GET https://localhost:3000/contacts
+GET http://localhost:3000/contacts
 
 ### Test locally get contact by id
-GET https://localhost:3000/contacts/662b2df0e5d4f9d90f0c9695
+GET http://localhost:3000/contacts/662b2df0e5d4f9d90f0c9695
 
 
 
