@@ -51,3 +51,31 @@ GET https://cse-341-project1-kvlw.onrender.com/contacts
 
 ### Test get contact by id
 GET https://cse-341-project1-kvlw.onrender.com/contacts/662b2df0e5d4f9d90f0c9695
+
+
+### Create contact
+POST https://cse-341-project1-kvlw.onrender.com/contacts 
+content-type: application/json
+
+{
+    "firstName": "Andres",
+    "lastName": "Costanzillo",
+    "email": "acaca@example.com",
+    "favoriteColor": "White",
+    "birthday": "1991-05-15"
+  }
+
+### Update contact
+PUT https://cse-341-project1-kvlw.onrender.com/contacts/66331ed5967ae928c75397ca 
+content-type: application/json
+
+{
+    "firstName": "Daniel",
+    "lastName": "Hofmann",
+    "email": "eldano@example.com",
+    "favoriteColor": "Blur",
+    "birthday": "1995-03-22"
+  }
+
+### Delete contact
+DELETE https://cse-341-project1-kvlw.onrender.com/contacts/66331ed5967ae928c75397ca
