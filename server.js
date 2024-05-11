@@ -26,6 +26,14 @@ app.use((req, res, next) => {
 
 app.use("/", require("./routes/"));
 
+/* ***********************
+ * Express Error Handler
+ *************************/
+app.use(async (err, req, res, next) => {
+  console.error(`Error at: "${req.originalUrl}": ${err.message}`);
+  res.status(500).send(`The was an error at ${req.originalUrl}`);
+});
+
 mongodb.initDB((err, mongodb) => {
   if (err) {
     console.log(err);

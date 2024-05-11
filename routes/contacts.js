@@ -1,16 +1,28 @@
 const express = require("express");
 const router = express.Router();
+const validator = require("../validator");
+const utilities = require("../utilities/utilities");
 
 const contactController = require("../controllers/contacts");
 
-router.get("/", contactController.getAll);
+router.get("/", utilities.handleErrors(contactController.getAll));
 
-router.get("/:id", contactController.getSingle);
+router.get("/:id", utilities.handleErrors(contactController.getSingle));
 
-router.post("/", contactController.createContact);
+router.post(
+  "/",
+  validator.contactValidator(),
+  validator.validate,
+  utilities.handleErrors(contactController.createContact)
+);
 
-router.put("/:id", contactController.updateContact);
+router.put(
+  "/:id",
+  validator.contactValidator(),
+  validator.validate,
+  utilities.handleErrors(contactController.updateContact)
+);
 
-router.delete("/:id", contactController.deleteContact);
+router.delete("/:id", utilities.handleErrors(contactController.deleteContact));
 
 module.exports = router;

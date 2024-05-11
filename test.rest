@@ -15,11 +15,11 @@ POST http://localhost:3000/contacts
 content-type: application/json
 
 {
-    "firstName": "Andres",
+    "firstName": "Agar",
     "lastName": "Costanzillo",
-    "email": "acaca@example.com",
+    "email": "acacaay@texample.com",
     "favoriteColor": "White",
-    "birthday": "1991-05-15"
+    "birthday": "1991-12-01"
   }
 
 ### Update contact
